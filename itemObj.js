@@ -1,12 +1,12 @@
-var Item = function (id, product_name, department_name, quantity, price){
+var item = function (id, product_name, department_name, quanity, price){
 	this.id = id;
 	this.product_name = product_name;
 	this.department_name = department_name;
 	this.price = price;
-	this.quantity = quantity;
+	this.quanity = quanity;
 }
 
 
 
-module.exports = Item;
+module.exports = item;
 

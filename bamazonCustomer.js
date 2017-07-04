@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 var choicesArr = [];
 var i3;
 var id;
+var Item = require('./itemObj');
 var connection = mysql.createConnection({
      host: "localhost",
      port: 3306,
@@ -17,12 +18,23 @@ connection.connect(function(err) {
      console.log("Connected as id " + connection.threadId);
      queryAllProducts();
 });
-module.exports = connection;
-function queryAllProducts() {
 
+
+
+
+
+
+function queryAllProducts() {
+     // initialize variables 
+     var name;
+     var id;
+     var dept_name;
+     var qty;
      // query db and print all products in store to screen along with price and dept name
      connection.query("SELECT * FROM products", function(err, res) {
           for (var i = 0; i < res.length; i++) {
+
+               // print product info to screen
                console.log("id:" + res[i].id + "\n   " + res[i].product_name + " |  $" + res[i].price + " |  Dept:" + res[i].department_name);
                // each time through loop store product id to variable 'i2'
                var i2 = res[i].id;
@@ -34,10 +46,10 @@ function queryAllProducts() {
           }
           term.bold.yellow("-----------------------------------\n\n");
 
-          	timer();
+          timer();
      });
 
-     
+
      function promptUser() {
 
           inquirer.prompt([{
@@ -145,10 +157,10 @@ function queryAllProducts() {
           });
      }
 
-function timer(){
-     setTimeout(function() { promptUser(); }, 2500);
-	
-}
+     function timer() {
+          setTimeout(function() { promptUser(); }, 2500);
+
+     }
 
 
 }
