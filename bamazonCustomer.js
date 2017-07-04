@@ -60,43 +60,8 @@ function queryAllProducts() {
                }
 
           ]).then(function(userResponse) {
-
-               if (userResponse.item === "1") {
-                    checkInventory("1");
-
-               }
-               if (userResponse.item === "2") {
-                    checkInventory("2");
-               }
-               if (userResponse.item === "3") {
-                    checkInventory("3");
-               }
-               if (userResponse.item === "4") {
-
-                    checkInventory("4");
-               }
-               if (userResponse.item === "5") {
-                    checkInventory("5");
-               }
-               if (userResponse.item === "6") {
-                    checkInventory("6");
-               }
-               if (userResponse.item === "7") {
-                    checkInventory("7");
-               }
-               if (userResponse.item === "8") {
-                    checkInventory("8");
-               }
-               if (userResponse.item === "9") {
-                    checkInventory("9");
-               }
-               if (userResponse.item === "10") {
-                    checkInventory("10");
-               }
-               if (userResponse.item === "11") {
-                    checkInventory("11");
-               }
-
+               var itemNum = userResponse.item;
+               checkInventory(itemNum)
           });
 
 

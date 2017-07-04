@@ -164,8 +164,7 @@ function increaseInventory() {
 
                               }
                               qty = qty + originalQty;
-                              term.yellow.bold("@" + qty);
-
+                             
                               // query sql db, update inventory with manager's input 
                               connection.query(
                                    "UPDATE products SET ? WHERE ?", [{
