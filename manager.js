@@ -42,7 +42,8 @@ function getCommand() {
           if (userResponse.command === "View Products For Sale") {
                queryProducts();
           } else if (userResponse.command === "View Low Inventory") {
-               console.log("my invemtory is low");
+               lowInventory();
+
           } else if (userResponse.command === "Add to Inventory") {
                console.log("inventory updated");
           } else {
@@ -50,4 +51,15 @@ function getCommand() {
           }
      });
 };
+
+function lowInventory() {
+     
+     connection.query("SELECT * FROM products WHERE stock_quanity < 5", function(err, res) {
+          for (var i = 0; i < res.length; i++)
+               console.log(res[i].product_name + "\t| id: " + res[i].id + " | Quanity: \t"+ res[i].stock_quanity);
+     });
+}
 getCommand();
+
+
+
