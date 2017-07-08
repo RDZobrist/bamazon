@@ -78,17 +78,18 @@ function queryAllProducts() {
           }]).then(function(userResponse2) {
                var total = price * userResponse2.quanity;
                var quanity2 = quanity - userResponse2.quanity;
-               updateInventory(id, quanity2);
+               updateInventory(id, quanity2, total);
                console.log("\tThanks for your purchase.\nReceipt:\nYour total is:\t$" + total);
-               setTimeout(function() { queryAllProducts(); }, 2500);
+               setTimeout(function() { queryAllProducts(); }, 1500);
           });
      }
 
      // update inventory  in mySql db 
-     function updateInventory(id, quanity2) {
+     function updateInventory(id, quanity2, total) {
           connection.query(
                "UPDATE products SET ? WHERE ?", [{
-                    stock_quanity: quanity2
+                    stock_quanity: quanity2, 
+                    product_sales: total
                }, {
                     id: id
                }],

@@ -59,12 +59,21 @@ function addProduct() {
 
      });
 }
-function queryProducts() {
 
+function queryProducts() {
      // query db and print all products in store to screen along with price and dept name
      connection.query("SELECT * FROM products", function(err, res) {
+
           for (var i = 0; i < res.length; i++) {
-               console.log("id:" + res[i].id + "\n   " + res[i].product_name + " |  $" + res[i].price + " |  Quanity: " + res[i].stock_quanity + " |  Dept:" + res[i].department_name);
+
+
+               console.log("id:" + res[i].id + 
+                    "\n   " + res[i].product_name + 
+                    " |  $" + res[i].price + " |  Quanity: " + 
+                    res[i].stock_quanity + " |  Dept:" + 
+                    res[i].department_name + 
+                    " | Net Sales: " + res[i].product_sales
+                    );
           }
           term.bold.yellow("-----------------------------------\n\n")
           setTimeout(function() { getCommand(); }, 3500);
@@ -164,7 +173,7 @@ function increaseInventory() {
 
                               }
                               qty = qty + originalQty;
-                             
+
                               // query sql db, update inventory with manager's input 
                               connection.query(
                                    "UPDATE products SET ? WHERE ?", [{
@@ -174,9 +183,9 @@ function increaseInventory() {
                                    }],
                                    function(err, res) {
                                         console.log("\n" + res.affectedRows + " products updated!\n");
-                                        setTimeout(function() { getCommand(); }, 3500);
+                                        setTimeout(function() { getCommand(); }, 1500);
                                    });
-                         });;
+                         });
                });
           };
      });
