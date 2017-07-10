@@ -42,13 +42,35 @@
 ###### App displays current invenotry - id, product_name, qty -  on screen, waiting four seconds before asking manager the id of product inventory they'd like to update
 ![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-8.png)
 
-######
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-1.png)
+###### Manager selects id 9
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-10.png)
 
-######
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-1.png)
+###### App prompts manager the qty amount to be added 
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-11.png)
 
-######
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-1.png)
+###### Manager enters 100
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-12.png)
 
+###### Qty Updates for Id 9 (coffee)   
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-14.png)
 
+###### Manager selects "add new product"
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-15.png)
+
+###### App prompts manager the name of  new product
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-15.png)
+
+###### Manager enters coffee_creamer
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-17.png)
+
+###### App prompts manager name, price/unit, department_name, qty to be added 
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-18.png)
+
+###### Manager enters coffee_creamer, 3.49, grocery, 101
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-20.png)
+
+###### App dispalays success messaged, waits four seconds, then restarts as manager
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-21.png)
+
+###### Product List updated
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-22.png)
