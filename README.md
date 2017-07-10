@@ -1,4 +1,4 @@
-# Bamazon # - ### A Storefront CLI, node.js && mySQL  application, ###### where customers can shop for items, and managers can add inventory, new products, view inventory, as well as monitor low-inventory products
+# Bamazon - A Storefront CLI, node.js and mySQL  application,  where customers can shop for items, and managers can add inventory, new products, view inventory, as well as monitor low-inventory products
 
 ###### Starting point as customer
 ![alt text](https://github.com/afflatus480/bamazon/blob/master/images/startingPoint-customer.png)
