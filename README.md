@@ -57,17 +57,12 @@
 ###### Manager selects "add new product"
 ![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-15.png)
 
-###### App prompts manager the name of  new product
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-15.png)
 
-###### Manager enters coffee_creamer
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-17.png)
-
-###### App prompts manager name, price/unit, department_name, qty to be added 
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-18.png)
+###### App prompts manager with product_name, price/unit, department_name, qty to be added 
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-21.png)
 
 ###### Manager enters coffee_creamer, 3.49, grocery, 101
-![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-20.png)
+![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-21.png)
 
 ###### App dispalays success messaged, waits four seconds, then restarts as manager
 ![alt text](https://github.com/afflatus480/bamazon/blob/master/images/manager-21.png)
