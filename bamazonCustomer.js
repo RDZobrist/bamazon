@@ -80,7 +80,7 @@ function queryAllProducts() {
                var quanity2 = quanity - userResponse2.quanity;
                updateInventory(id, quanity2, total);
                console.log("\tThanks for your purchase.\nReceipt:\nYour total is:\t$" + total);
-               setTimeout(function() { queryAllProducts(); }, 1500);
+               setTimeout(function() { queryAllProducts(); }, 3500);
           });
      }
 
